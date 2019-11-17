@@ -1,0 +1,180 @@
+.container {
+    margin: 10px auto 0;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.active-link .nav-link {
+    outline: 1px solid red;
+    color: red !important;
+}
+
+.book-list {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book-item__block {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background: #3a3c40;
+    color: white;
+    margin: 10px;
+}
+
+.book-logo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.book-item__sub-block {
+    min-height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-price {
+    color: white;
+    font-weight: bold;
+}
+
+.book-author {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.book-title {
+    padding: 10px;
+    color: white;
+    margin: 5px 0;
+}
+
+.book-link {
+    color: white;
+    text-decoration: none;
+}
+
+.book-link:hover {
+    color: #DCDCDC;
+    text-decoration: none;
+}
+
+.book-item__footer {
+    padding: 10px;
+    color: white;
+    background: teal;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.btn-basket {
+    color: white;
+}
+
+.book-select {
+    display: none;
+}
+
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: baseline;
+}
+
+.form-block {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.typeBookSelect {
+    width: 63%;
+}
+
+.priceInput {
+    width: 35%;
+}
+
+.col-form-label {
+    color: black !important;
+    font-weight: bold;
+}
+
+.sendBtn {
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgBtnSend {
+    margin-left: 10px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearBtn {
+    display: flex;
+    background: rgb(151, 7, 7) !important;
+    align-items: flex-end;
+}
+
+.book-list-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-list-admin__item {
+    display: flex;
+    justify-content: space-between;
+    background: #e6e6e6;
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.info {
+    color: black;
+    font-size: 16px;
+}
+
+.book-title-admin {
+    margin: 0;
+}
+
+.book-descr-admin {
+    margin: 0;
+}
+
+.toolbar-container {
+    text-align: end;
+}
+
+.addBtn-admin {
+    display: flex;
+    align-items: flex-end;
+}

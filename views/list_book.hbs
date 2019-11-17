@@ -1,0 +1,38 @@
+<div class="book-container">
+    <div class="toolbar-container">
+        <button class="btn btn-success addBtn-admin" type="button">
+            Добавить книгу
+            <i class="material-icons center addBtn">
+                add
+            </i>
+        </button>
+    </div>
+
+    {{#if books}}
+    <ul class="book-list-admin">
+        {{#each books}}
+        <li class="book-list-admin__item">
+            <div class="info">
+                <h4 class="book-title-admin">{{title}}</h4>
+                <p class="book-descr-admin">{{author}} <span>{{price}} руб.</span></p>
+
+            </div>
+            <div class="list-tooldar">
+                <a class="btn btn-info btn-sm" href="/update:{{_id}}">
+                    <i class="material-icons right updateBtn">
+                        update
+                    </i>
+                </a>
+                <a class="btn btn-danger btn-sm" href="/delete:{{_id}}">
+                    <i class="material-icons right deleteBtn">
+                        delete
+                    </i>
+                </a>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p class="descr">No books</p>
+    {{/if}}
+</div>

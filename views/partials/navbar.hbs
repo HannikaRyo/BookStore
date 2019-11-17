@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div>
+    <a class="navbar-brand" href="/">BookStore</a>
+  </div>
+
+  <div class="navbar-menu">
+    <ul class="navbar-nav navbar-list">
+      {{#if isOrder}}
+      <li class="nav-item active-link">
+        <a class="nav-link" href="/order">
+          Заказ
+        </a>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a class="nav-link" href="/order">
+          Заказ
+        </a>
+      </li>
+      {{/if}}
+
+      {{#if isDelivery}}
+      <li class="nav-item active-link"><a class="nav-link" href="/delivery">Доставка</a></li>
+      {{else}}
+      <li class="nav-item"><a class="nav-link" href="/delivery">Доставка</a></li>
+      {{/if}}
+
+      {{#if isContact}}
+      <li class="nav-item active-link">
+        <a class="nav-link" href="/contact">
+          Контакты
+        </a>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">
+          Контакты
+        </a>
+      </li>
+      {{/if}}
+
+      {{#if isBasket}}
+      <li class="nav-item active-link">
+        <a class="nav-link" href="/basket" class="link--basket">
+          <i class="tiny material-icons link--basket-icon">add_shopping_cart</i>
+          {{add_item}} {{add_item_label}}
+        </a>
+      </li>
+      {{else}}
+      <li class="nav-item ">
+        <a class="nav-link" href="/basket" class="link--basket">
+          <i class="mat-icon tiny material-icons link--basket-icon">add_shopping_cart</i>
+          {{add_item}} {{add_item_label}}
+        </a>
+      </li>
+      {{/if}}
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary btn-sm" type="submit">
+          <i class="material-icons">search</i>
+        </button>
+      </form>
+  </div>
+</nav>
